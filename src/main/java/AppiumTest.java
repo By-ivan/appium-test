@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.ios.IOSDriver;
 
-public class Test
+public class AppiumTest
 {
     public static void main(String... args) throws MalformedURLException
     {

@@ -19,9 +19,8 @@ repositories {
 dependencies {
     compile 'io.appium:java-client:6.0.0-BETA2'
     compile 'org.seleniumhq.selenium:selenium-remote-driver:3.8.1'
+    compile 'org.seleniumhq.selenium:selenium-java:3.12.0'
 }
 
-task execute(type:JavaExec) {
-   main = mainClass
-   classpath = sourceSets.main.runtimeClasspath
-}
+apply plugin:'application'
+mainClassName = "ChromeDriverTest"
