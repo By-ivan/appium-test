@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'appium-test'
+rootProject.name = 'test-runner'
