@@ -1,3 +1,5 @@
+## Description
+Very simple test runner.
 ## How to run 
-run "./gradlew -PmainClass=Test execute" command
-OR use IDE (Eclipse, IDEA) import as gradle project and run Test class
+- Set main class to run in build.gradle
+- run command in console './gradlew clean run'
