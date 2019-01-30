@@ -17,7 +17,7 @@ public class ApplitoolsReactineTest
         Eyes eyes = new Eyes();
         eyes.setApiKey(APPLITOOLS_API_KEY);
         eyes.setServerUrl(APPLITOOLS_SERVER_URL);
-		eyes.setLogHandler(new StdoutLogHandler(true));
+	eyes.setLogHandler(new StdoutLogHandler(true));
 
         eyes.open(driver, "appName", "windowName", new RectangleSize(600, 800));
         driver.get("https://www.reactine.ca/");
