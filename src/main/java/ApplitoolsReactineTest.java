@@ -1,4 +1,5 @@
 import com.applitools.eyes.RectangleSize;
+import com.applitools.eyes.Region;
 import com.applitools.eyes.StdoutLogHandler;
 import com.applitools.eyes.selenium.Eyes;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,8 @@ public class ApplitoolsReactineTest
 
         eyes.open(driver, "appName", "windowName", new RectangleSize(600, 800));
         driver.get("https://www.reactine.ca/");
-        eyes.checkWindow("Login window");
+        Region region = new Region(100, 100, 100, 100);
+        eyes.checkRegion(region);
         eyes.close();
     }
 }
